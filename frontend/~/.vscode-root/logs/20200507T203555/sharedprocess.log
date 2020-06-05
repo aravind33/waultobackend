@@ -1,0 +1,2 @@
+[2020-05-07 20:36:00.107] [sharedprocess] [info] main {"machineId":"787b8ee368e51452748e92d0a7e2767197f12351d44ebc1988e455a1c838d51d","windowId":2}
+[2020-05-07 20:36:00.314] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/aravind33/React/frontend/~/.vscode-root/User/snippets'
