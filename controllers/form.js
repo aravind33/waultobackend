@@ -54,6 +54,5 @@ exports.contactBlogAuthorForm = (req, res) => {
         console.log('Message sent for Contact Form')
     }).catch((error) => {
         console.log(error.response.body)
-        // console.log(error.response.body.errors[0].message)
     })
 };

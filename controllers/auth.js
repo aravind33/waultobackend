@@ -31,9 +31,6 @@ exports.signup = (req, res) => {
                     error: err
                 });
             }
-            // res.json({
-            //     user: success
-            // });
             res.json({
                 message: 'Signup success! Please signin.'
             });
@@ -111,25 +108,6 @@ exports.adminMiddleware = (req, res, next) => {
         next();
     });
 };
-
-//Why is this used?
-// exports.canUpdateDeleteBlog = (req, res, next) => {
-//     const slug = req.params.slug.toLowerCase();
-//     Blog.findOne({ slug }).exec((err, data) => {
-//         if (err) {
-//             return res.status(400).json({
-//                 error: errorHandler(err)
-//             });
-//         }
-//         let authorizedUser = data.postedBy._id.toString() === req.profile._id.toString();
-//         if (!authorizedUser) {
-//             return res.status(400).json({
-//                 error: 'You are not authorized'
-//             });
-//         }
-//         next();
-//     });
-// };
 
 exports.forgotPassword = (req, res) => {
     const { email } = req.body;
